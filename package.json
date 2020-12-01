@@ -1,0 +1,17 @@
+{
+  "name": "aoc2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "day01_1": "ts-node day01/part1.ts",
+    "day01_2": "ts-node day01/part2.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.2",
+    "@types/node": "^14.14.10",
+    "ts-node": "^9.0.0"
+  }
+}
