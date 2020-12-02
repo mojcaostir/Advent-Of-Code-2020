@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "day01_1": "ts-node day01/part1.ts",
-    "day01_2": "ts-node day01/part2.ts"
+    "day01_1": "ts-node src/day01/part1.ts",
+    "day01_2": "ts-node src/day01/part2.ts",
+    "day02_1": "ts-node src/day02/part1.ts",
+    "day02_2": "ts-node src/day02/part2.ts"
   },
   "author": "",
   "license": "ISC",
