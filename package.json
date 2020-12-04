@@ -9,8 +9,9 @@
     "day02_1": "ts-node src/day02/part1.ts",
     "day02_2": "ts-node src/day02/part2.ts",
     "day03_1": "ts-node src/day03/part1.ts",
-    "day03_2": "ts-node src/day03/part2.ts"
-  },
+    "day03_2": "ts-node src/day03/part2.ts",
+    "day04_1": "ts-node src/day04/part1.ts",
+    "day04_2": "ts-node src/day04/part2.ts"
   "author": "",
   "license": "ISC",
   "devDependencies": {
