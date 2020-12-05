@@ -1,6 +1,6 @@
 {
   "name": "aoc2020",
-  "version": "1.0.0",
+  "version": "5.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,11 @@
     "day03_1": "ts-node src/day03/part1.ts",
     "day03_2": "ts-node src/day03/part2.ts",
     "day04_1": "ts-node src/day04/part1.ts",
-    "day04_2": "ts-node src/day04/part2.ts"
-  "author": "",
+    "day04_2": "ts-node src/day04/part2.ts",
+    "day05_1": "ts-node src/day05/part1.ts",
+    "day05_2": "ts-node src/day05/part2.ts"
+  },
+  "author": "Mustamusta",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.1.2",
