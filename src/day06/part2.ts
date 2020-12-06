@@ -29,6 +29,6 @@ function sumOfCommonAnswers(peopleGroup: string[][]): number {
 const fileData = readFileSplitByEmptyLines('/day06/input.txt')
 const groups = splitToGroups(fileData);
 const peopleGroup = splitToPeopleInGroups(groups);
-const sumCommon = sumOfCommonAnswers(peopleGroup);
+const day06part2Result = sumOfCommonAnswers(peopleGroup);
 
-console.log(sumCommon)
+console.log('Sum of common answers: ' + day06part2Result)

@@ -28,6 +28,6 @@ export function sumOfAnswers(peopleGroup: string[][]): number {
 const fileData = readFileSplitByEmptyLines('/day06/input.txt')
 const groups = splitToGroups(fileData);
 const peopleGroup = splitToPeopleInGroups(groups);
-const sum = sumOfAnswers(peopleGroup);
+const day06part1Result = sumOfAnswers(peopleGroup);
 
-console.log(sum)
+console.log('Sum of answers:' + day06part1Result)
