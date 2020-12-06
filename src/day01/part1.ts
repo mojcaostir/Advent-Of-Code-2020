@@ -1,7 +1,6 @@
-import fs from 'fs';
+import {readFileSplitByNewLine} from "../util";
 
-const data: number[] =
-  fs.readFileSync(__dirname + '/input.txt', 'utf-8').split('\n').map(Number);
+const data = readFileSplitByNewLine('/day01/input.txt').map(Number);
 
 for (const number of data) {
   for (let i = 0; i < data.length; i++) {

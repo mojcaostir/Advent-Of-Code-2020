@@ -1,17 +1,15 @@
-import fs from 'fs';
+import {readFileSplitByNewLine} from "../util";
 
 export function getPassports(): {}[] {
-  const fileData: string[] =
-    fs.readFileSync(__dirname + '/input.txt', 'utf-8').split(/\n\n/);
-
-  const data = []
-  for (const entry of fileData) {
+  const data = readFileSplitByNewLine('/day04/input.txt');
+  const passportData = []
+  for (const entry of data) {
     const newEntry = entry.replace(/\n/g, ' ')
-    data.push(newEntry)
+    passportData.push(newEntry)
   }
 
   let passports = []
-  for (const passport of data) {
+  for (const passport of passportData) {
     let obj = {}
     const entry = passport.split(' ')
     entry.forEach(item => {

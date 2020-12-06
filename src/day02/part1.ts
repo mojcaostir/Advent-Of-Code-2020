@@ -1,7 +1,6 @@
-import fs from 'fs';
+import {readFileSplitByNewLine} from "../util";
 
-const data: string[] =
-  fs.readFileSync(__dirname + '/input.txt', 'utf-8').split('\n');
+const data = readFileSplitByNewLine('/day02/input.txt');
 
 let count = 0;
 for(const pass of data) {

@@ -1,5 +1,5 @@
 import {splitToGroups, splitToPeopleInGroups} from "./helpers";
-import {readFileSplitByEmptyLines} from "../helper";
+import {readFileSplitByEmptyLines} from "../util";
 
 function sumOfCommonAnswers(peopleGroup: string[][]): number {
   let sum: number = 0;
@@ -26,7 +26,7 @@ function sumOfCommonAnswers(peopleGroup: string[][]): number {
   return sum
 }
 
-const fileData = readFileSplitByEmptyLines('/input.txt')
+const fileData = readFileSplitByEmptyLines('/day06/input.txt')
 const groups = splitToGroups(fileData);
 const peopleGroup = splitToPeopleInGroups(groups);
 const sumCommon = sumOfCommonAnswers(peopleGroup);

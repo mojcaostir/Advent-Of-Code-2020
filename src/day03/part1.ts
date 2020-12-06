@@ -1,7 +1,6 @@
-import fs from 'fs';
+import {readFileSplitByNewLine} from "../util";
 
-const data: string[] =
-  fs.readFileSync(__dirname + '/input.txt', 'utf-8').split('\n');
+const data = readFileSplitByNewLine('/day03/input.txt');
 
 const step = {sx: 3, sy: 1};
 let trees = 0;

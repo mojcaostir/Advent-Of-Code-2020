@@ -1,7 +1,6 @@
-import fs from 'fs';
+import {readFileSplitByNewLine} from "../util";
 
-const data: string[] =
-  fs.readFileSync(__dirname + '/input.txt', 'utf-8').split('\n');
+const data = readFileSplitByNewLine('/day05/input.txt');
 
 const seatIDs: number[] = []
 for (const pass of data) {
