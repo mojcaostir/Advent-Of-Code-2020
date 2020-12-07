@@ -1,7 +1,7 @@
-import {readFileSplitByEmptyLines} from "../util";
+import {readFileSplitByEmptyLine} from "../util";
 
 export function getPassports(): {}[] {
-  const data = readFileSplitByEmptyLines('/day04/input.txt');
+  const data = readFileSplitByEmptyLine('/day04/input.txt');
   const passportData = []
   for (const entry of data) {
     const newEntry = entry.replace(/\n/g, ' ')
