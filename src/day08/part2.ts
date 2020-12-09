@@ -3,7 +3,7 @@ import {readFileSplitByNewLine} from "../util";
 const fileData = readFileSplitByNewLine('/day08/input.txt');
 
 // @ts-ignore
-function accumulatorLoopFinderMachine(data, findLoopExit = false, init = 0) {
+function accumulatorLoopFinderMachine(data, findLoop = false, init = 0) {
   const inverses = { jmp: 'nop', nop: 'jmp' };
   const visitedInstructions = [];
   let accumulator = 0;
@@ -26,12 +26,12 @@ function accumulatorLoopFinderMachine(data, findLoopExit = false, init = 0) {
       accumulator += argument
     }
 
-    else if (findLoopExit) {
+    else if (findLoop) {
       // @ts-ignore
       const inverseInstruction = [inverses[operation], argument];
-      const dataCopy = [].concat(data);
-      // @ts-ignore
+      const dataCopy = data;
       dataCopy[i] = inverseInstruction.join(' ');
+
       // @ts-ignore
       const loop = accumulatorLoopFinderMachine(dataCopy, false, i);
 
@@ -40,7 +40,6 @@ function accumulatorLoopFinderMachine(data, findLoopExit = false, init = 0) {
       }
     }
 
-    // @ts-ignore
     visitedInstructions[i] = instruction;
     i += operation === 'jmp' ? argument : 1;
   }
