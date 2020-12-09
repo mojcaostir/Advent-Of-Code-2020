@@ -21,7 +21,9 @@
     "day07_solution1": "ts-node src/day07/solution1.ts",
     "day07_solution2": "ts-node src/day07/solution2.ts",
     "day08_1": "ts-node src/day08/part1.ts",
-    "day08_2": "ts-node src/day08/part2.ts"
+    "day08_2": "ts-node src/day08/part2.ts",
+    "day09_1": "ts-node src/day09/part1.ts",
+    "day09_2": "ts-node src/day09/part2.ts"
   },
   "author": "Mustamusta",
   "license": "ISC",
