@@ -1,6 +1,6 @@
 import {readFileSplitByNewLine} from "../util";
 
-function findTheNumber(data: number[]) {
+function findTheNumber(data: number[]): number | string {
   outer:
   for (let checkNumber = 25; checkNumber < data.length; checkNumber++) {
     let preamble = 25;
