@@ -23,7 +23,10 @@
     "day08_1": "ts-node src/day08/part1.ts",
     "day08_2": "ts-node src/day08/part2.ts",
     "day09_1": "ts-node src/day09/part1.ts",
-    "day09_2": "ts-node src/day09/part2.ts"
+    "day09_2": "ts-node src/day09/part2.ts",
+    "day10_1": "ts-node src/day10/part1.ts",
+    "day10_2": "ts-node src/day10/part2.ts",
+    "day10_solution2": "ts-node src/day10/solution2.ts"
   },
   "author": "Mustamusta",
   "license": "ISC",
